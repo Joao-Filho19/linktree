@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+}
+
+.container{
+    background: #1C1C1C;
+    width: 360px;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+
+    padding: 32px auto;
+}
+
+.container-logo{
+    width: 150px;
+    height: 150px;
+}
+
+.container-titulo{
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    margin-top: 4vh;
+}
+
+.container-subtitulo{
+    font-weight: 600;
+    font-size: 16px;
+    color: yellow;
+    margin-top: .5vh;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120%;
+
+    gap: 12px;
+    margin-top: 4vh;
+}
+
+.links a{
+    width: 78%;
+    background-color: #4F4F4F;
+    text-decoration: none;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.links img{
+    margin: 0;
+    width: 37px;
+    height: 37px;
+    margin-left: 32px;
+}
+
+.links span{
+    font-size: 24px;
+    color: #FAFAFA;
+    margin-right: 50px;
+}
+.links .link-title{
+    width: 60%;
+}
+
+.links a:hover{
+    background-color: #FFB90F;
+
+}
+
+
+@media screen and (min-width: 1280px){
+    body{
+        background: linear-gradient(to bottom, #1C1C1C 0%, #4F4F4F 100%);
+        /* background: green; */
+    }
+
+    .container-logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .container-titulo{
+        font-size: 30px;
+    }
+
+    .container-subtitulo{
+        font-size: 13px;
+    }
+
+    .container{
+        width: 400px;
+        height: 95vh;
+    }
+
+    .links{
+        width: 100%;
+        margin-top: 2vh;
+        gap: 10px;
+    }
+
+    .links a{
+        padding: 8px;
+    }
+
+    .link-title{
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    body{
+        background: linear-gradient(180deg, #120C56 0%, #22C1C3 100%);
+    }
+
+    .container{
+        width: 440px;
+        height: 95vh;
+    }
+
+    .links{
+        width: 100%;
+    }
+}
